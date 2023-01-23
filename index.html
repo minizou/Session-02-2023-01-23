@@ -5,15 +5,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>:3</title>
+  <link rel="stylesheet" href="css/index.css" type="text/css">
+  <!-- <script type="text/javascript" src="index.js"></script> !-->
+  <title>ᓚᘏᗢ mrow</title>
 </head>
 
-<body>
-  <h1>Authors:</h1>
-  <ul>
-    <li>me</li>
-    <li>still me</li>
-    <li>still me lol</li>
-  </ul>
+<img id="cutie" src="./static/cutie.png" alt="cute small cat in large space">
+
+<body class="bogus">
+  <h1>hey. do you like small cats</h1>
+  <div class="cats">
+    <marquee direction="right" behavior="alternate">🐈</marquee>
+    <marquee direction="up" behavior="alternate">🐈</marquee>
+    <marquee direction="down" behavior="alternate">🐈</marquee>
+
+  </div>
+  <button type="button" onclick="show()" id="button">
+    yeah i love small cats how did you know</button>
+
 </body>
+
+<script>
+  document.getElementById('cutie').style.display = "none";
+  
+  let show = () => {
+    document.getElementById('cutie').style.display = "block";
+    document.getElementById('button').style.display = "none";
+  }
+</script>
+
 </html>
