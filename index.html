@@ -5,33 +5,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index.css" type="text/css">
-  <!-- <script type="text/javascript" src="index.js"></script> !-->
-  <title>ᓚᘏᗢ mrow</title>
+  <link rel="stylesheet" href="./index.css" type="text/css">
+  <title>🐈🐈🐈 meow</title>
 </head>
 
-<img id="cutie" src="./static/cutie.png" alt="cute small cat in large space">
-
-<body class="bogus">
+<body>
   <h1>hey. do you like small cats</h1>
-  <div class="cats">
-    <marquee direction="right" behavior="alternate">🐈</marquee>
-    <marquee direction="up" behavior="alternate">🐈</marquee>
-    <marquee direction="down" behavior="alternate">🐈</marquee>
+  <h2 id="subtitle">asking for a friend ᓚᘏᗢ</h2>
 
+  <div class="buttons">
+    <button class="button"
+      type="button" onclick="show()" id="button">
+      yeah i love small cats how did you know
+    </button>
+    <button class="button" id="btn">
+      no
+    </button>
   </div>
-  <button type="button" onclick="show()" id="button">
-    yeah i love small cats how did you know</button>
 
-</body>
+  <img id="img" src="./static/cutie.png" alt="cute small cat in large space">
 
-<script>
-  document.getElementById('cutie').style.display = "none";
-  
-  let show = () => {
-    document.getElementById('cutie').style.display = "block";
-    document.getElementById('button').style.display = "none";
-  }
-</script>
+  <div class="guestbook">
+    <p id="names">wagahai <br> f.d.c. willard</p>
+    <form id="form">
+      name: <input type=text id="name" size=50>
+      <input class="button" type="button" onclick="sign()" value="sign my guestbook">
+    </form>
+  </div>
+
+  <p class="para">
+    I didn't know where to include a paragraph, <br>
+    so here is one awkwardly in the corner. To <br>
+    tell you the truth, I don't actually own a <br>
+    cat. Love my friends' cats though
+  </p>
+</body> 
+
+
+<script src="index.js"></script>
 
 </html>

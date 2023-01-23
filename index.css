@@ -1,3 +1,62 @@
-.cats {
-  background: black;
+html {
+  background: #1d171d;
+  font-family: monospace;
+}
+
+body {
+  color: #f5dcc5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  transition: display 1s
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 0.25em;
+}
+
+h2 {
+  color: #a2a393;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.button {
+  margin: 1em;
+  padding: 0.5em 1em;
+  background-color: #404c49;
+  text-decoration: none;
+  border-radius: 1em;
+  border: 2px solid #404c49;
+  color: #f8f8d1;
+  transition: background-color 0.5s, border-color 0.5s;
+  cursor: pointer;
+  font-family: monospace;
+  z-index: 10;
+}
+
+.button:hover {
+  background-color: #868b63;
+  border-color: #868b63;
+  transition: background-color 0.5s, border-color 0.5s;
+}
+
+.guestbook {
+  position: fixed;
+  bottom: 0;
+}
+
+.para {
+  color: #372e37;
+  position: absolute;
+  z-index: -999;
+  left: 0;
+  bottom: 0;
+  margin: 1em;
 }
