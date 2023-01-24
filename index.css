@@ -52,11 +52,18 @@ h2 {
   bottom: 0;
 }
 
-.para {
+.hidden {
   color: #372e37;
   position: absolute;
   z-index: -999;
-  left: 0;
   bottom: 0;
   margin: 1em;
+}
+
+#para {
+  left: 0;
+}
+
+#link {
+  right: 0;
 }
